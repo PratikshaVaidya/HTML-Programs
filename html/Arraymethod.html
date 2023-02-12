@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>document</title>
+            </head>
+            <body>
+                <script>
+                    //arrays
+                    var fruits = ["apple","Banana","Mango","Orange"]; 
+                    document.write(fruits[0]+"<br>");
+                    document.write(fruits[1]+"<br>");
+                    document.write(fruits[2]+"<br>");
+                    document.write(fruits[3]+"<br>");
+
+                   document.write("There are length of the array is ="+(fruits.length));
+                   //push more fruits
+                    fruits.push("cherry");
+                    fruits.unshift("kiwi");
+                    document.writeln("<br>"+fruits);
+
+                    //pop more fruits
+                    var removelast=fruits.pop();
+                    document.writeln("<br>"+fruits);
+                    document.writeln("<br>"+removelast);
+
+                    //use shift
+                    var removefirst=fruits.shift();
+                    document.writeln("<br>"+fruits);
+                    document.writeln("<br>"+removefirst);
+                    
+                    //splice we can add or remove element at any index
+                    var Slicemove=fruits.splice(0,1);
+                    document.writeln("<br>"+slicemove);
+                    document.writeln("<br>"+fruits);
+                    var sliceinsert=fruits.splice(1,0,"apple","guava");
+                    document.writeln("<br>"+spliceinsert);
+                    document.writeln("<br>"+fruits);
+
+                    //join
+                    document.write("<br>"+fruits.join());
+                    document.write("<br>"+fruits.join("*"));
+
+                    //slice
+                    document.write("<br>"+fruits.slice(3));
+                    document.writeln("<br>"+"slice(-3)"+fruits.slice(-3));
+                    document.writeln("<br>"+fruits);
+                    document.writeln("<br>"+"slice(2,4)"+fruits.slice(-3,2,4));
+
+                    //merge or cat
+                    var veg = ["tomato","potato","brinjal"];
+                    var conarray=fruits.concat(veg);
+                    document.write("<br>"+"merging element are ="+conarray);
+
+                    //index of
+                    document.writeln("<br>"+"indexmethod ="+veg.indexOf("brinjal"));
+                    document.writeln("<br>"+"indexmethod ="+veg.indexOf("brinjal"));
+
+
+
+
+                </script>
+            </body>
+</html>

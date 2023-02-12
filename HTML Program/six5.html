@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>this is used for border image </title>
+	<style type="text/css">
+		#bordering
+		{
+			border : 20px solid transparent;
+			border-image: url("abc.png")20%round;
+			/*round, stretch*/
+			padding: 15px;
+
+		}
+		#bordering2
+		{
+			border : 20px solid transparent;
+			border-image: url("abcd.png")20%stretch;
+			/*round, stretch*/
+			padding: 15px;
+
+		}
+		
+		
+
+	</style>
+</head>
+<body>
+<h1>Border properties:-</h1>
+<p id="bordering">border image1</p>
+<p id="bordering2">border image second</p>
+</body>
+</html>
